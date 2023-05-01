@@ -2,14 +2,14 @@
   description = "LaTeX Sources for my cv";
 
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs/nixos-unstable;
+    nixpkgs.url = github:NixOS/nixpkgs/nixos-22.11;
     flake-utils.url = github:numtide/flake-utils;
   };
 
   outputs = { self, nixpkgs, flake-utils }:
     with flake-utils.lib; eachSystem allSystems (system:
     let
-      pkgs = nipxkgs.legacyPackages.${system};
+      pkgs = nixpkgs.legacyPackages.${system};
       tex = pkgs.texlive.combine {
         inherit (pkgs.texlive) scheme-minimal latex-bin latexmk;
       };
@@ -23,7 +23,7 @@
           buildPhase = ''
             export PATH="${pkgs.lib.makeBinPath buildInputs}";
             mkdir -p .cache/texmf-var
-            env TEXMFHOME=.cache TECMFVAR=.cache/texmf-var \
+            env TEXMFHOME=.cache TEXMFVAR=.cache/texmf-var \
               latexmk -interaction=nonstopmode -pdf -lualatex \
               resume.tex
           '';
