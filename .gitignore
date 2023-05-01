@@ -1,5 +1,6 @@
 # flake build outputs
 ./out/
+./result/
 
 # emacs makes this folder
 ./auto/
