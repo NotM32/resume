@@ -2,10 +2,12 @@
  "resume"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
-                     '(("article" "a4paper")))
+                     '(("resumecls" "color")))
    (TeX-run-style-hooks
     "latex2e"
-    "article"
-    "art10"))
+    "resume-common"
+    "resumecls"
+    "resumecls10")
+   (LaTeX-add-bibliographies))
  :latex)
 
