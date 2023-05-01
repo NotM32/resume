@@ -5,9 +5,7 @@
                      '(("resumecls" "color")))
    (TeX-run-style-hooks
     "latex2e"
-    "resume-common"
     "resumecls"
-    "resumecls10")
-   (LaTeX-add-bibliographies))
+    "resumecls10"))
  :latex)
 
