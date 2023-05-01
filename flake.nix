@@ -11,7 +11,10 @@
     let
       pkgs = nixpkgs.legacyPackages.${system};
       tex = pkgs.texlive.combine {
-        inherit (pkgs.texlive) scheme-minimal latex-bin latexmk;
+        inherit (pkgs.texlive) scheme-basic scheme-context latex-bin latexmk
+        # CTAN and other tex packages here
+        resumecls
+        ctex;
       };
     in rec {
       packages = {
