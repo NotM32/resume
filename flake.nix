@@ -27,7 +27,7 @@
             export PATH="${pkgs.lib.makeBinPath buildInputs}";
             mkdir -p .cache/texmf-var
             env TEXMFHOME=.cache TEXMFVAR=.cache/texmf-var \
-              latexmk -interaction=nonstopmode -pdf -lualatex \
+              xelatex -interaction=nonstopmode -pdf -lualatex -f\
               resume.tex
           '';
           installPhase = ''
