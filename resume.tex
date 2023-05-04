@@ -1,25 +1,21 @@
 % !Mode:: "TeX:UTF-8"
 % +-----------------------------------------------------------------------------
-% | File: resume-en
-% | Author: huxuan
-% | E-mail: i(at)huxuan.org
-% | Created: 2012-12-18
-% | Last modified: 2020-04-16
-% | Description:
-% |     A English Resume Example in LaTeX based on resumecls
+% | File: resume
+% | Author: m32
+% | E-mail: m32(at)m32.m32
 % |
-% | Copyright (c) 2012-2020 by huxuan. All rights reserved.
+% | Copyright (c) 2012-2020 by m32. All rights reserved.
 % +-----------------------------------------------------------------------------
 
 \documentclass[color]{resumecls}
 
 
-\name{Riley Cole}
-\organization{Sr. Systems Engineer}
+\name{Riley C. O'Connor}
+\organization{Systems Engineer, Linux Systems Administrator, Developer.}
 \address{Greater Sacramento Area, CA}
 \mobile{+1 307 438 9253}
 \mail{m32@m32.io}
-\homepage{https://m32.me/}
+\homepage{https://m32.io/}
 \leftfooter{Last Modified: \today}
 \rightfooter{\url{https://cv.m32.io}}
 
@@ -36,61 +32,70 @@
 %     Degree2 & College2 & Major2 \\
 % }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\heading{Certifications}
+\entry{0em}{Xrr}{{\bfseries CompTIA} & A+, Network+, ITF+ & 2020 \\}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{Working Experience}
-\entry{0em}{Xlr}{{\bfseries Colo, LLC.} \quad Sr. Software Engineer & Denver, CO & July 2022 - Present}
+\entry{0em}{Xlr}{{\bfseries Colo, LLC.} \quad Systems Engineer & Denver, CO & July 2022 - Present}
 \entry{2em}{X}{%
-    Lead technology side of a new product development. Lots of time clocked
-    on the datacenter floor, working with NOC engineer and running test
-    configurations on baremetal hardware. When offsite, remotely developed
-    massive monolithic web applications, and created a gitops first standard
-    operating procedure. Ended up with a complex infrastructure management
-    solution. \\
+    Leading the technology side of a new stealth product development, created great softwares and
+    implemented modern practices. Developed robust UIs with Svelte and
+    TailwindCSS. Developed and implemented advanced provisioning, networking,
+    and infrastructure automation Elixir monolith, utilizing Rust NIFs to
+    interact with custom IPMI and DHCP protocol utilities. \\
 }
 \entry{0em}{Xlr}{{\bfseries Tesla, Inc.} \quad Operations Coordinator & Remote, US & May 2021 - Dec 2022}
 \entry{2em}{X}{%
-    Making use of a diverse set of software tools, I was tasked with completion
-    of many special projects involving workflow automation, business and
-    performance data analysis, supplychain observability, and analyzing data in
-    warehouse management systems. I often worked alone, but my impact was far; my data and
-    automations supported a team of 100+ persons \\
+    Recognized for my diverse technology skillset, I was assinged many
+    special projects involving workflow automation, business and
+    performance data analysis, supplychain observability, and warehouse
+    management system data analysis. I worked independently while traveling,
+    however my impact was far; my data and automations supported a team of 100s \\
 }
-\entry{0em}{Xlr}{{\bfseries Tesla, Inc.} \quad Logistics Analyst & Remote, US & Mar 2020 - May 2021}
-\entry{2em}{X}{%
-  Monitored created, and streamlined the creation of warehouse and supplychain
-  orders for the commercial energy division. I was quickly promoted, and my
-  title and duties became dynamic. \\
-}
+\entry{0em}{Xlr}{{\bfseries Tesla, Inc.} \quad Logistics Analyst & Remote, US & Jan 2021 - May 2021}
+% \entry{2em}{X}{%
+%   Monitored created, and streamlined the creation of warehouse and supplychain
+%   orders for the commercial energy division. I was quickly promoted, and my
+%   title and duties became dynamic. \\
+% }
+\entry{0em}{Xlr}{{\bfseries Tesla, Inc.} \quad Commercial FST & Remote, US & Mar
+  2020 - Jan 2021}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\heading{Freelance Experience}
-\entry{0em}{Xlr}{{\bfseries Alliance Energy} \quad Logistics Analyst & Prague,
+% \heading{Freelance Experience}
+\entry{0em}{Xlr}{{\bfseries Alliance Energy} \quad Consultant, Systems Engineer & Prague,
   Prague, CZ & 2018, 2020 - 2022}
 \entry{2em}{X}{%
   Consulted initially to help growing IT demands, onboarded with an MSP style
   relationship. Client returned for many small tasks, like web scrapers and reporting tools.
   Eventually was asked to migrate lots of old VPS servers, to a cloud solution.
-  I initiated the move, built the config management and infra as code. Setup Grafana dashboard for not only infrastructure, but to observe
+  I initiated the move, built the config management and infra as code. Setup
+  Grafana dashboard for not only infrastructure, but to observe
   their energy production data as well; I found this project very satisfying. Client is
   happy, and continues to check in for advice. \\
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{Nonprofit Experience (Gainful and Volunteer)}
 \entry{0em}{Xrr}{%
-    After-School and Summer Robotics Program Instructor & Children's Museum & 2015-2018 \\
+    After-School and Summer Extra Curricular Robotics Program Instructor & Children's Museum & 2015-2018 \\
     Educational IT Equipment Rollout Support & Wind River Indian Schools & 2018 \\
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \heading{Professional Skill}
 \entry{0em}{lX}{%
     {\bfseries Development} & \\
-    Proficient in  & Bash, Python, Golang, Elixir, Ruby, PHP, TypeScript \\
+    Proficient in  & Bash, Python, Golang, Elixir, Ruby, PHP, TypeScript, \LaTeX \\
     Experienced in & Scala, Clojure, ClojureScript,  ReScript, C/C++, Rust, Elm \\
-    Have used      & VueJS, Svelte, TailwindCSS, GraphQL, Influx, rxJS and many
-    more libraries \\
-    {\bfseries System Admin / DevOps Stuff }  & \\
-    Use            & Nix, NixOS, Terraform, Ansible, Nornir, Kubernetes, Nomad,
-    Podman, Docker, Consul, FluxCD, Tekton, Argo, Jenkins, Postgres, Mongo, ELK
-    Stack \\
+    Have used      & VueJS, Svelte, TailwindCSS, GraphQL, Influx, rxJS and more \\
+    {\bfseries Sysadmin / DevOps}  & \\
+    Proficient in  & Linux, BSD and Windows environments. Nix, NixOS, Terraform,
+                     Ansible, Nornir, Kubernetes,
+                     OpenStack, RedShift, Nomad, Podman, Docker, Consul,
+                     FluxCD, Tekton, Argo, Jenkins, Postgres, Mongo, ELK
+                     Stack, YubiKeys \\
+    Experienced in & Networking, Cisco IOS and NXOS, Arista EOS, Juniper Junos,
+                     MicroTik, PFSense/OPNsense. BGP, OSPF, BGP-RPKI and related. \\
 }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \heading{Other listings, such as hobby, network profile and so on}
 % \entry{0em}{lX}{%
