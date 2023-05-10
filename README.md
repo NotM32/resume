@@ -33,9 +33,9 @@ think thrice before taking this format, as I've had limited success.
 
 So with the warning out of the way, here's how you can use this;
 
-    1. Open `resume.tex`, make your edits and change my name at the least
-    2. In the root of the directory run `nix flake build` or `nix build`
-    3. `resume.pdf` should be symlinked in `result/`
+1. Open `resume.tex`, make your edits and change my name at the least
+2. In the root of the directory run `nix flake build` or `nix build`
+3. `resume.pdf` should be symlinked in `result/`
 
 CTAN packages can be added in `flake.nix` under the let statement. You can search `nixpkgs`
 to find packages and verify they are in the nix ecosystem. Please note that if it's not
